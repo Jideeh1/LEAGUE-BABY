@@ -1,0 +1,26 @@
+* {
+    font-family: "Poppins";
+    
+    transition: .3s all ease-in-out;
+    color: #fffefe;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #010100;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    border: #8c9094 1px solid;
+    justify-content: space-between;
+    display: flex;
+    
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 3vh;
+}
