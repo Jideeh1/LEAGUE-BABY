@@ -151,6 +151,7 @@ nav {
     
     transform: translate(-50%, -50%);
     left: 50%;
+    gap: 1cqh;
     top: 50%;
     
 
@@ -161,10 +162,11 @@ nav {
         border: none;
 
         border-radius: 50px;
+        margin: 0 auto;
         gap: 1cqw;
 
         background-color: #131214;
-        padding: 1.5cqh 1cqw;
+        padding: 1cqh 1cqw;
 
         img {
             height: 3cqh;
@@ -179,16 +181,68 @@ nav {
         }
         
         span {
+            background-color: rgba(255, 255, 255, 0.073);
+            border-radius: 100%;
             font-size: 1cqw;
             margin: auto 0;
             padding: .5cqw;
-            background-color: rgba(255, 255, 255, 0.073);
-            border-radius: 100%;
         }
     }
 
     .github-con:hover {
         background-color: #222023;
+    }
+
+    .hero-text {
+        flex-direction: column;
+        display: flex;
+
+        gap: 3cqh;
+
+        h1 {
+            text-align: center;
+            letter-spacing: -3px;
+            line-height: 1.3;
+            font-weight: 600;
+            font-size: 4cqw;
+            background-image: none;
+        }
+        
+        p {
+            text-align: center;
+            color: #8a8b90;
+
+        }
+    }
+
+    button {
+        margin: 5cqh auto 0 auto;
+        width: max-content;
+        cursor: pointer;
+
+        background-color: #fffefe;
+        padding: 1.5ch 1.5cqw;
+        border-radius: 10px;
+        color: #010100;
+        font-weight: 600;
+        font-size: 1cqw;
+    }
+
+    button:hover,
+    button:focus {
+        transform: scale(0.95);
+    }
+
+    button:active {
+        transform: scale(0.90);
+    }
+
+    .info-text {
+        text-align: center;
+        
+        margin-top: 1cqh;
+        color: #8a8b90;
+        font-size: 1cqw;
     }
 }
 
