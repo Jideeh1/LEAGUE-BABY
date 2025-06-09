@@ -254,3 +254,21 @@ nav {
   'GRAD' 0,
   'opsz' 24
 }
+
+.matches {
+    z-index: -2;
+
+    #one {
+        position: absolute;
+        z-index: inherit;
+
+        transform: skewY(5deg);
+        border-radius: 10px;
+        height: 60cqh;
+        left: -30px;
+        opacity: .3;
+        top: 10cqh;
+        -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
+    }
+}
