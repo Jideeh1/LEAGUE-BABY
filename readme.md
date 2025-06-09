@@ -12,11 +12,12 @@ This website is meant to teach players how to play with and around [Jideeh1](htt
 
 - [Official League of Legends Assets](https://developer.riotgames.com/docs/lol#data-dragon)
 - [W3School Documentations](https://www.w3schools.com/)
-- [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
 - [mdnW Web Docs](https://developer.mozilla.org/en-US/)
+- [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
 
 > [!IMPORTANT]
 > If you're gonna use the listed official resources of League of legends, it's gonna download a shit ton of zip files on your computer!
+
 > [!NOTE]
 > if you came here because we lost, first of all FUCK YOU and secondly, FUCK OFF. Thank you.
 
