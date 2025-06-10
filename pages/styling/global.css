@@ -33,20 +33,26 @@ nav {
     .logo-con {
         height: max-content;
         width: max-content;
+        margin: auto 0;
         display: flex;
 
         gap: .7cqw;
-        margin: auto 0;
         
-            img {
-                cursor: pointer;
+            div {
+                justify-content: center;
+                display: flex;
 
-                background-image: linear-gradient(200deg, #29292a, #1a1a1b);
-                border: 1px solid #26292a;
-                border-radius: 15px;
-                padding: 1cqh;
-                height: 5cqh;
-                margin: auto 0;
+                img {
+                    cursor: pointer;
+                    margin: auto 0;
+
+
+                    background-image: linear-gradient(200deg, #29292a, #1a1a1b);
+                    border: 1px solid #26292a;
+                    border-radius: 15px;
+                    padding: 1cqh;
+                    height: 5cqh;
+                }
             }
 
         img:hover {
@@ -143,6 +149,9 @@ nav {
 }
 
 .hero {
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    background-image: radial-gradient(circle at 3px 3px, #8a8b9080 1.1px, transparent 0);
     justify-content: center;
     flex-direction: column;
     height: max-content;
@@ -150,13 +159,19 @@ nav {
     width: max-content;
     display: flex;
     
+    
+    
     transform: translate(-50%, -50%);
+    background-size: 20px 20px;
+    height: 60%;
+    width: 45%;
     left: 50%;
     gap: 1cqh;
     top: 50%;
     
 
     .github-con {
+        height: max-content;
         width: max-content;
         cursor: pointer;
         display: flex;
@@ -164,27 +179,28 @@ nav {
 
         border-radius: 50px;
         margin: 0 auto;
+        z-index: 2;
         gap: 1cqw;
 
         background-color: #131214;
-        padding: 1cqh 1cqw;
+        padding: .5cqh .5cqw;
 
         img {
-            height: 3cqh;
+            height: 2.5cqh;
             margin: auto 0;
         }
 
         p {
             text-align: center;
             font-weight: 300;
-            font-size: 1cqw;
+            font-size: .7cqw;
             margin: auto 0;
         }
         
         span {
             background-color: rgba(255, 255, 255, 0.073);
             border-radius: 100%;
-            font-size: 1cqw;
+            font-size: .7cqw;
             margin: auto 0;
             padding: .5cqw;
         }
@@ -220,13 +236,14 @@ nav {
         margin: 5cqh auto 0 auto;
         width: max-content;
         cursor: pointer;
-
+        
         background-color: #fffefe;
         padding: 1.5ch 1.5cqw;
         border-radius: 10px;
         color: #010100;
         font-weight: 600;
         font-size: 1cqw;
+        z-index: 3;
     }
 
     button:hover,
@@ -262,13 +279,68 @@ nav {
         position: absolute;
         z-index: inherit;
 
-        transform: skewY(5deg);
-        border-radius: 10px;
-        height: 60cqh;
-        left: -30px;
-        opacity: .3;
-        top: 10cqh;
         -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
         mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
+        transform: skewY(5deg);
+        border-radius: 10px;
+        height: 50cqh;
+        left: 10cqw;
+        opacity: .5;
+        top: 10cqh;
+    }
+
+    #two {
+        position: absolute;
+        z-index: inherit;
+        
+        -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
+        transform: skewY(-7deg);
+        border-radius: 10px;
+        height: 50cqh;
+        left: 2cqw;
+        opacity: .5;
+        top: 30cqh;
+    }
+
+    #three {
+        position: absolute;
+        
+        -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
+        transform: skewY(1deg);
+        border-radius: 10px;
+        bottom: 10cqh;
+        height: 10cqh;
+        opacity: .5;
+        z-index: -5;
+        left: 3cqw;
+    }
+
+    #four {
+        position: absolute;
+        
+        -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
+        transform: skewY(-3deg);
+        border-radius: 10px; 
+        bottom: 22cqh;
+        opacity: .5;
+        z-index: -5;
+        left: 5cqw;
+    }
+
+    #five {
+        position: absolute;
+        
+        -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
+        transform: skewY(10deg) rotate(-5deg);
+        border-radius: 10px;
+        height: 50cqh;
+        bottom: 10cqh;
+        right: -7cqw;
+        opacity: .6;
+        z-index: -1;
     }
 }
