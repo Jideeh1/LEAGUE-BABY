@@ -25,7 +25,7 @@ nav {
     border: #8c909440 1px solid;
     background-color: #010100;
     margin: 3vh auto 0 auto;
-    border-radius: 15px;
+    border-radius: 1cqw;
     padding: 2cqh 1cqw;
     width: 60vw;
     z-index: 2;
@@ -105,10 +105,11 @@ nav {
         border-radius: 15px;
         padding: 2cqh 1cqw;
         color: #010100;
+        font-weight: 600;
+        font-size: 1cqw;
         
         border: transparent;
         cursor: pointer;
-        font-weight: 600;
     }
 
     button:hover {
@@ -151,7 +152,7 @@ nav {
 .hero {
     -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
     mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-    background-image: radial-gradient(circle at 3px 3px, #8a8b9080 1.1px, transparent 0);
+    background-image: radial-gradient(circle at 1cqw 1cqw, #8a8b9080 .07cqw, transparent 0);
     justify-content: center;
     flex-direction: column;
     height: max-content;
@@ -217,17 +218,19 @@ nav {
         gap: 3cqh;
 
         h1 {
+            background-image: none;
             text-align: center;
-            letter-spacing: -3px;
+
+            letter-spacing: -.2cqw;
             line-height: 1.3;
             font-weight: 600;
             font-size: 4cqw;
-            background-image: none;
         }
         
         p {
             text-align: center;
             color: #8a8b90;
+            font-size: 1cqw;
 
         }
     }
@@ -239,7 +242,7 @@ nav {
         
         background-color: #fffefe;
         padding: 1.5ch 1.5cqw;
-        border-radius: 10px;
+        border-radius: 1cqw;
         color: #010100;
         font-weight: 600;
         font-size: 1cqw;
@@ -282,7 +285,7 @@ nav {
         -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
         mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
         transform: skewY(5deg);
-        border-radius: 10px;
+        border-radius: 1cqw;
         height: 50cqh;
         left: 10cqw;
         opacity: .5;
@@ -296,7 +299,7 @@ nav {
         -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
         mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
         transform: skewY(-7deg);
-        border-radius: 10px;
+        border-radius: 1cqw;
         height: 50cqh;
         left: 2cqw;
         opacity: .5;
@@ -309,25 +312,12 @@ nav {
         -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
         mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
         transform: skewY(1deg);
-        border-radius: 10px;
+        border-radius: 1cqw;
         bottom: 10cqh;
         height: 10cqh;
         opacity: .5;
         z-index: -5;
         left: 3cqw;
-    }
-
-    #four {
-        position: absolute;
-        
-        -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-        mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
-        transform: skewY(-3deg);
-        border-radius: 10px; 
-        bottom: 22cqh;
-        opacity: .5;
-        z-index: -5;
-        left: 5cqw;
     }
 
     #five {
@@ -336,11 +326,45 @@ nav {
         -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
         mask-image: linear-gradient(20deg, -10deg rgba(0,0,0,0), rgba(0,0,0,1));
         transform: skewY(10deg) rotate(-5deg);
-        border-radius: 10px;
+        border-radius: 1cqw;
         height: 50cqh;
         bottom: 10cqh;
         right: -7cqw;
         opacity: .6;
         z-index: -1;
+    }
+}
+
+footer {
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    bottom: 1cqh;
+    width: 100%;
+    opacity: .5;
+
+    p {
+        text-align: center;
+        width: max-content;
+        margin: 0 auto;
+        
+        color: #8a8b90;
+        font-size: 1cqw;
+    }
+
+    .img-con {
+        height: max-content;
+        margin: 0 auto;
+        display: flex;
+
+        gap: 1cqw;
+
+        img {
+            cursor: pointer;
+
+            height: 6cqh;
+            opacity: .8;
+        }
     }
 }
