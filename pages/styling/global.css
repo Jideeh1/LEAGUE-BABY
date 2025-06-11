@@ -354,11 +354,13 @@ footer {
     }
 
     .img-con {
+        justify-content: center;
         height: max-content;
         margin: 0 auto;
         display: flex;
-
+        
         gap: 1cqw;
+
 
         img {
             cursor: pointer;

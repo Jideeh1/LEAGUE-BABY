@@ -2,7 +2,7 @@
 
 ## Team with jideeh?
 
-- **Version**: 2025.6.9
+- **Version**: 2025.6.11
 - **Status**: In Development
 - **Developers**: [Jideeh1](https://github.com/Jideeh1)
 
