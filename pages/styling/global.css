@@ -208,7 +208,11 @@ nav {
     }
 
     .github-con:hover {
+        transform: scale(1);
         background-color: #222023;
+    }
+    .github-con:active {
+        transform: scale(0.95);
     }
 
     .hero-text {
@@ -369,4 +373,8 @@ footer {
             opacity: .8;
         }
     }
+}
+
+.img-con > :nth-child(3){
+    margin: 0 auto;
 }
