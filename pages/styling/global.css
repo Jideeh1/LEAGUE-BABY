@@ -378,3 +378,42 @@ footer {
 .img-con > :nth-child(3){
     margin: 0 auto;
 }
+
+
+.champion-filter {
+    width: max-content;
+    display: flex;
+
+    padding: 1cqh .5cqw;
+    border-radius: 10px;
+    margin-top: 5cqh;
+    gap: 1cqw;
+
+    .filter-btn {
+        width: max-content;
+        
+        background-color: #131214;
+        padding: 1cqh .5cqw;
+        border-radius: 5px;
+        font-size: .8cqw;
+        color: #8a8b90;
+
+        #top {
+            content: url(../../assets/roles/top.png);
+        }
+        #top:hover {
+            content: url(../../assets/roles/top-hover.webp);
+        }
+
+        #jungle {
+            content: url(../../assets/roles/jungle.png);
+        }
+        #jungle:hover {
+            content: url(../../assets/roles/jungle-hover.webp);
+        }
+    }
+
+    .filter-btn:hover {
+        color: #fffefe;
+    }
+}
