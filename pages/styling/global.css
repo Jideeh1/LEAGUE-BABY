@@ -18,11 +18,18 @@ html {
     display: none;
 }
 
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
 nav {
     justify-content: space-between;
     display: flex;
     
-    border: #8c909440 1px solid;
+    border: #8c909440 .15cqw solid;
     background-color: #010100;
     margin: 3vh auto 0 auto;
     border-radius: 1cqw;
@@ -390,7 +397,10 @@ footer {
     gap: 1cqw;
 
     .filter-btn {
+        justify-content: center;
+        flex-direction: column;
         width: max-content;
+        display: flex;
         
         background-color: #131214;
         padding: 1cqh .5cqw;
@@ -398,22 +408,58 @@ footer {
         font-size: .8cqw;
         color: #8a8b90;
 
-        #top {
-            content: url(../../assets/roles/top.png);
+        img {
+            height: 2cqw;
+            margin: auto 0;
         }
-        #top:hover {
+
+
+        .top:hover,
+        .top:focus {
             content: url(../../assets/roles/top-hover.webp);
         }
 
-        #jungle {
-            content: url(../../assets/roles/jungle.png);
-        }
-        #jungle:hover {
+        .jungle:hover,
+        .jungle:focus {
             content: url(../../assets/roles/jungle-hover.webp);
+        }
+
+        .mid:hover,
+        .mid:focus {
+            content: url(../../assets/roles/mid-hover.webp);
+        }
+
+        .support:hover,
+        .support:focus {
+            content: url(../../assets/roles/support-hover.webp);
+        }
+
+        .bot:hover,
+        .bot:focus {
+            content: url(../../assets/roles/bottom-hover.webp);
         }
     }
 
-    .filter-btn:hover {
-        color: #fffefe;
+    .filter-btn:hover,
+    .filter-btn:focus,
+    .filter-btn:active {
+        color: #caad71;
     }
+
+    .search-sort {
+        background-image: url(../../assets/search.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
+        background-position: .6cqw .9cqw;
+        border: .15cqw solid #8c909440;
+        background-size: 1cqw auto;
+        border-radius: .5cqw;
+        padding: 1cqh 2cqw;
+        font-size: .8cqw;
+        color: #8a8b90;
+    }
+
 }
+
