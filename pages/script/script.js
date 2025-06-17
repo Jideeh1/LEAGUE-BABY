@@ -17,3 +17,9 @@ setInterval(() => {
   el.style.setProperty('--role-text', `"${roles[i]}"`);
   i = (i + 1) % roles.length;
 }, 1000);
+
+function activeIcon(content) {
+
+  var content = 
+
+}
