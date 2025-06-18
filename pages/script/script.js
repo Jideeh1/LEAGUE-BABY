@@ -18,8 +18,20 @@ setInterval(() => {
   i = (i + 1) % roles.length;
 }, 1000);
 
-function activeIcon(content) {
+function activeIcon(role) {
 
-  var content = 
+  const icons = {
+    bottom: "url('../../assets/roles/bottom-hover.webp')",
+    top: "url('../../assets/roles/top-hover.webp')",
+    mid: "url('../../assets/roles/mid-hover.webp')",
+    support: "url('../../assets/roles/support-hover.webp')",
+    jungle: "url('../../assets/roles/jungle-hover.webp')"
+  }
 
+  const content = icons[role];
+
+  const buttons = document.querySelectorAll('.role-icon');
+  buttons.forEach(button => {
+    button.href = content;
+  });
 }

@@ -24,19 +24,36 @@
     <nav class="champion-filter">
       <button class="filter-btn">A-Z</button>
       <button class="filter-btn">
-        <img class="top" src="../assets/roles/top.png" alt="top" />
+        <img
+          onclick="activeIcon(top)"
+          class="top role-icon"
+          src="../assets/roles/top.png"
+          alt="top"
+        />
       </button>
       <button class="filter-btn">
-        <img class="jungle" src="../assets/roles/jungle.png" alt="jungle" />
+        <img
+          class="jungle role-icon"
+          src="../assets/roles/jungle.png"
+          alt="jungle"
+        />
       </button>
       <button class="filter-btn">
-        <img class="mid" src="../assets/roles/mid.png" alt="mid" />
+        <img class="mid role-icon" src="../assets/roles/mid.png" alt="mid" />
       </button>
       <button class="filter-btn">
-        <img class="support" src="../assets/roles/support.png" alt="support" />
+        <img
+          class="support role-icon"
+          src="../assets/roles/support.png"
+          alt="support"
+        />
       </button>
       <button class="filter-btn">
-        <img class="bot" src="../assets/roles/bottom.png" alt="bottom" />
+        <img
+          class="bot role-icon"
+          src="../assets/roles/bottom.png"
+          alt="bottom"
+        />
       </button>
       <input
         type="search"
@@ -46,5 +63,8 @@
         id=""
       />
     </nav>
+
+    <script src="script/script.js"></script>
+    <script src="script/vanilla-tilt.js"></script>
   </body>
 </html>
