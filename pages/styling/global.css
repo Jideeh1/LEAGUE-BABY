@@ -408,36 +408,17 @@ footer {
         font-size: .8cqw;
         color: #8a8b90;
 
-        img {
+        .role-icon {
             height: 2cqw;
             margin: auto 0;
+            filter: grayscale(1);
         }
 
-
-        .top:hover,
-        .top:focus {
-            content: url(../../assets/roles/top-hover.webp);
+        img:hover,
+        img:focus {
+            filter: grayscale(0);
         }
 
-        .jungle:hover,
-        .jungle:focus {
-            content: url(../../assets/roles/jungle-hover.webp);
-        }
-
-        .mid:hover,
-        .mid:focus {
-            content: url(../../assets/roles/mid-hover.webp);
-        }
-
-        .support:hover,
-        .support:focus {
-            content: url(../../assets/roles/support-hover.webp);
-        }
-
-        .bot:hover,
-        .bot:focus {
-            content: url(../../assets/roles/bottom-hover.webp);
-        }
     }
 
     .filter-btn:hover,
@@ -456,7 +437,7 @@ footer {
         border: .15cqw solid #8c909440;
         background-size: 1cqw auto;
         border-radius: .5cqw;
-        padding: 1cqh 2cqw;
+        padding: 1.5cqh 2cqw;
         font-size: .8cqw;
         color: #fffefe;
     }

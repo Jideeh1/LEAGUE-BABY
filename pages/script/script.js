@@ -18,20 +18,31 @@ setInterval(() => {
   i = (i + 1) % roles.length;
 }, 1000);
 
-// function activeIcon(role) {
+function buttonLit() {
 
-//   const icons = {
-//     bottom: "url('../../assets/roles/bottom-hover.webp')",
-//     top: "url('../../assets/roles/top-hover.webp')",
-//     mid: "url('../../assets/roles/mid-hover.webp')",
-//     support: "url('../../assets/roles/support-hover.webp')",
-//     jungle: "url('../../assets/roles/jungle-hover.webp')"
-//   }
+  var buttons = document.querySelectorAll('.role-icon');
 
-//   const content = icons[role];
+  if (buttons.style.filter === "grayscale(1)") {
+    buttons.style.filter = "grayscale(0)";
+  } else {
+    buttons.style.filter = "grayscale(1)";
+  }
+}
 
-//   const buttons = document.querySelectorAll('.role-icon');
-//   buttons.forEach(button => {
-//     button.href = content;
-//   });
-// }
+function activeIcon(role) {
+
+  const icons = {
+    bottom: "url('../../assets/roles/bottom-hover.webp')",
+    top: "url('../../assets/roles/top-hover.webp')",
+    mid: "url('../../assets/roles/mid-hover.webp')",
+    support: "url('../../assets/roles/support-hover.webp')",
+    jungle: "url('../../assets/roles/jungle-hover.webp')"
+  }
+
+  const content = icons[role];
+
+  const buttons = document.querySelectorAll('.role-icon');
+  buttons.forEach(button => {
+    button.href = content;
+  });
+}
