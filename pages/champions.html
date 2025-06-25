@@ -23,46 +23,263 @@
 
     <nav class="champion-filter">
       <button class="filter-btn">A-Z</button>
+
       <button class="filter-btn">
         <img
-          onclick="activeIcon('top')"
-          class="top role-icon"
-          src="../assets/roles/top-hover.webp"
+          onclick="sortTop()"
+          class="role-icon"
+          id="top"
+          src="../assets/roles/top.png"
           alt="top"
         />
       </button>
       <button class="filter-btn">
         <img
-          onclick="buttonLit()"
-          class="jungle role-icon"
-          src="../assets/roles/jungle-hover.webp"
+          onclick="sortJungle()"
+          class="role-icon"
+          id="jungle"
+          src="../assets/roles/jungle.png"
           alt="jungle"
         />
       </button>
       <button class="filter-btn">
         <img
-          class="mid role-icon"
-          src="../assets/roles/mid-hover.webp"
+          onclick="sortMid()"
+          class="role-icon"
+          id="mid"
+          src="../assets/roles/mid.png"
           alt="mid"
         />
       </button>
       <button class="filter-btn">
         <img
-          class="support role-icon"
-          src="../assets/roles/support-hover.webp"
+          onclick="sortSupport()"
+          class="role-icon"
+          id="support"
+          src="../assets/roles/support.png"
           alt="support"
         />
       </button>
       <button class="filter-btn">
         <img
-          class="bot role-icon"
-          src="../assets/roles/bottom-hover.webp"
+          onclick="sortBot()"
+          class="role-icon"
+          id="bot"
+          src="../assets/roles/bottom.png"
           alt="bottom"
         />
       </button>
-      /> <input type="search" name="" placeholder="Search a champion"
-      class="search-sort" id=""
+
+      <input
+        type="search"
+        name=""
+        placeholder="Search a champion"
+        class="search-sort"
+        id=""
+      />
     </nav>
+
+    <main>
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="soraka"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="mid|support"
+        id="xerath"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="nami"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="jungle"
+        id="vi"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="pyke"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="jungle"
+        id="khazix"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="top|support"
+        id="shen"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="velkoz"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="sona"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="bot"
+        id="caitlyn"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="thresh"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="leona"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support|bot"
+        id="ashe"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="top|mid"
+        id="yasuo"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="mid"
+        id="katarina"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="bot"
+        id="jinx"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="bot"
+        id="vayne"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="mid|jungle"
+        id="zed"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="lulu"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="bot"
+        id="jhin"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support"
+        id="yuumi"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="top"
+        id="pantheon"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="mid"
+        id="akali"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="jungle"
+        id="warwick"
+      ></div>
+
+      <div
+        class="card"
+        data-tilt
+        data-tilt-reverse="true"
+        data-set="support|mid"
+        id="brand"
+      ></div>
+    </main>
 
     <script src="script/script.js"></script>
     <script src="script/vanilla-tilt.js"></script>

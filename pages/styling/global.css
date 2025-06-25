@@ -392,7 +392,7 @@ footer {
     display: flex;
 
     padding: 1cqh .5cqw;
-    border-radius: 10px;
+    border-radius: 1cqw; 
     margin-top: 5cqh;
     gap: 1cqw;
 
@@ -403,20 +403,14 @@ footer {
         display: flex;
         
         background-color: #131214;
+        border-radius: .5cqw;
         padding: 1cqh .5cqw;
-        border-radius: 5px;
         font-size: .8cqw;
         color: #8a8b90;
 
         .role-icon {
             height: 2cqw;
             margin: auto 0;
-            filter: grayscale(1);
-        }
-
-        img:hover,
-        img:focus {
-            filter: grayscale(0);
         }
 
     }
@@ -444,3 +438,25 @@ footer {
 
 }
 
+main {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    
+    padding: 10cqh 0cqw;
+    column-gap: 3.5cqw;
+    row-gap: 3cqw;
+
+    .card {
+        border: #8c909420 .15cqw solid;
+        background-color: #13121450;
+        transition: all .1s linear;
+        border-radius: .5cqw;
+        height: 30cqw;
+        width: 20cqw;
+        z-index: 2;
+
+        cursor: pointer;
+
+    }
+}

@@ -18,31 +18,61 @@ setInterval(() => {
   i = (i + 1) % roles.length;
 }, 1000);
 
-function buttonLit() {
 
-  var buttons = document.querySelectorAll('.role-icon');
 
-  if (buttons.style.filter === "grayscale(1)") {
-    buttons.style.filter = "grayscale(0)";
+function sortTop() {
+  var top = document.getElementById('top');
+
+  if (top.src.endsWith("/assets/roles/top.png")) { 
+    top.src = "/assets/roles/top-hover.webp";
   } else {
-    buttons.style.filter = "grayscale(1)";
+    top.src = "/assets/roles/top.png";
   }
+  console.log(top.src + "is this working????")
 }
 
-function activeIcon(role) {
+function sortJungle() {
+  var top = document.getElementById('jungle');
 
-  const icons = {
-    bottom: "url('../../assets/roles/bottom-hover.webp')",
-    top: "url('../../assets/roles/top-hover.webp')",
-    mid: "url('../../assets/roles/mid-hover.webp')",
-    support: "url('../../assets/roles/support-hover.webp')",
-    jungle: "url('../../assets/roles/jungle-hover.webp')"
+  if (top.src.endsWith("/assets/roles/jungle.png")) { 
+    top.src = "/assets/roles/jungle-hover.webp";
+  } else {
+    top.src = "/assets/roles/jungle.png";
   }
-
-  const content = icons[role];
-
-  const buttons = document.querySelectorAll('.role-icon');
-  buttons.forEach(button => {
-    button.href = content;
-  });
+  console.log(jungle.src + "is this working????")
 }
+
+function sortMid() {
+  var top = document.getElementById('mid');
+
+  if (top.src.endsWith("/assets/roles/mid.png")) { 
+    top.src = "/assets/roles/mid-hover.webp";
+  } else {
+    top.src = "/assets/roles/mid.png";
+  }
+  console.log(mid.src + "is this working????")
+}
+
+function sortSupport() {
+  var top = document.getElementById('support');
+
+  if (top.src.endsWith("/assets/roles/support.png")) { 
+    top.src = "/assets/roles/support-hover.webp";
+  } else {
+    top.src = "/assets/roles/support.png";
+  }
+  console.log(support.src + "is this working????")
+}
+
+function sortBot() {
+  var top = document.getElementById('bot');
+
+  if (top.src.endsWith("/assets/roles/bottom.png")) { 
+    top.src = "/assets/roles/bottom-hover.webp";
+  } else {
+    top.src = "/assets/roles/bottom.png";
+  }
+  console.log(bot.src + "is this working????")
+}
+
+
