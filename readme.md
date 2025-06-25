@@ -16,6 +16,20 @@ live view of this project is under this link: https://league-baby.vercel.app/
 - [W3School Documentations](https://www.w3schools.com/)
 - [mdnW Web Docs](https://developer.mozilla.org/en-US/)
 - [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
+   <details open>
+    <summary>Champion Splash Art</summary>
+        <ul>
+            <li><a href="http://imgur.com/a/bopyj">Main Resource</a></li>
+            <li><a href="http://imgur.com/a/MxK38">A-E</a></li>
+            <li><a href="http://imgur.com/a/k7Thz">F-K</a></li>
+            <li><a href="http://imgur.com/a/PoumH">L-Q</a></li>
+            <li><a href="http://imgur.com/a/fvu8e">R-S</a></li>
+            <li><a href="http://imgur.com/a/JieRz">T-U</a></li>
+            <li><a href="http://imgur.com/a/E7yfR">V-Z</a></li>
+
+        </ul>
+
+    </details>
 
 > [!IMPORTANT]
 > If you're gonna use the listed official resources of League of legends, it's gonna download a shit ton of zip files on your computer!

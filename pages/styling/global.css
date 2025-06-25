@@ -448,7 +448,7 @@ main {
     row-gap: 3cqw;
 
     .card {
-        border: #8c909420 .15cqw solid;
+        border: #8c909420 .2cqw solid;
         background-color: #13121450;
         transition: all .1s linear;
         border-radius: .5cqw;
@@ -456,7 +456,47 @@ main {
         width: 20cqw;
         z-index: 2;
 
+        position: relative;
         cursor: pointer;
 
+        .card-content {
+            height: 100%;
+            width: 100%;
+
+            .champion {
+                object-fit: cover;
+                
+                opacity: .6;
+                border-radius: .5cqw;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+    }
+
+    
+    .card::before {
+        
+        background: radial-gradient(
+            50cqw circle at  var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.15),
+            transparent 30%
+        );
+
+        border-radius: inherit;
+        position: absolute;
+        content: "";
+        
+        transition: opacity 500ms;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        opacity: 0;
+        left: 0;
+        top: 0;
+    }
+    
+    .card:hover::before {
+        opacity: 1;
     }
 }
