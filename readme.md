@@ -26,9 +26,7 @@ live view of this project is under this link: https://league-baby.vercel.app/
             <li><a href="http://imgur.com/a/fvu8e">R-S</a></li>
             <li><a href="http://imgur.com/a/JieRz">T-U</a></li>
             <li><a href="http://imgur.com/a/E7yfR">V-Z</a></li>
-
         </ul>
-
     </details>
 
 > [!IMPORTANT]

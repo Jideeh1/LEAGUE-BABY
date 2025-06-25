@@ -451,52 +451,79 @@ main {
         border: #8c909420 .2cqw solid;
         background-color: #13121450;
         transition: all .1s linear;
-        border-radius: .5cqw;
+        border-radius:5cqw;
         height: 30cqw;
-        width: 20cqw;
         z-index: 2;
-
+        
         position: relative;
+        width: max-content;
         cursor: pointer;
 
         .card-content {
+            transition: width 700ms ease;
+            position: relative;
+
+            border-radius: 5cqw;
             height: 100%;
-            width: 100%;
+            width: 100%;        
 
             .champion {
+                transition: filter 500ms ease-in-out;
+                border-radius: inherit;
                 object-fit: cover;
                 
                 opacity: .6;
-                border-radius: .5cqw;
                 height: 100%;
-                width: 100%;
+                width: 10cqw;
             }
-        }
+            
+            .cover {
+                position: absolute;
+                
+                border-bottom-right-radius: 5cqw;
+                border-bottom-left-radius: 5cqw;
+                background-color: #caad7150;
+                width: 100%;
+                height: 0%;
+                bottom: 0;
+                
+                img {
+                    filter: drop-shadow(.1cqw .1cqw 1px #000000);
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    height: 3cqw;
+                    left: 50%;
+                    top: 0%;
+                }
+            }
 
+
+            
+        }
     }
 
     
     .card::before {
-        
-        background: radial-gradient(
-            50cqw circle at  var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.15),
-            transparent 30%
-        );
-
-        border-radius: inherit;
+        background-color: transparent;
+        height: max-content;
+        width: max-content;
+        text-align: center;
         position: absolute;
-        content: "";
-        
+
         transition: opacity 500ms;
-        height: 100%;
-        width: 100%;
-        z-index: 3;
+        transform: translate(-50%, -50%);
+        font-size: 1.5cqw;
+        z-index: 3; 
         opacity: 0;
-        left: 0;
-        top: 0;
+        left: 50%;
+        top: 50%;
+        
     }
+
     
-    .card:hover::before {
+    .card:hover::before,
+    .card:hover::after {
         opacity: 1;
     }
+
 }

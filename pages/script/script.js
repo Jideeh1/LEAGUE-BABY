@@ -91,3 +91,43 @@ const handleOnMouseMove = e => {
 for (const card of document.querySelectorAll(".card")) {
   card.onmousemove = e => handleOnMouseMove(e);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+
+var supports = document.querySelectorAll('.cover_support');
+
+supports.forEach(function(support) {
+  support.src = "/assets/roles/support-hover.webp";
+});
+
+
+
+var mid = document.querySelectorAll('.cover_mid');
+
+mid.forEach(function(mid) {
+  mid.src = "/assets/roles/mid-hover.webp";
+});
+
+
+
+var jungle = document.querySelectorAll('.cover_jungle');
+
+jungle.forEach(function(jungle) {
+  jungle.src = "/assets/roles/jungle-hover.webp";
+});
+
+
+var bot = document.querySelectorAll('.cover_bot');
+
+bot.forEach(function(bot) {
+  bot.src = "/assets/roles/bottom-hover.webp";
+});
+
+
+var tob = document.querySelectorAll('.cover_top');
+
+tob.forEach(function(tob) {
+  tob.src = "/assets/roles/top-hover.webp";
+});
+
+});

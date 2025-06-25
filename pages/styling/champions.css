@@ -1,3 +1,174 @@
 #soraka {
     object-position: 80% 50%;
 }
+#soraka::before{
+    content: "SORAKA";
+}
+
+#xerath {
+    object-position: 55% 50%;
+}
+#xerath::before {
+    content: "XERATH";
+}
+
+#nami {
+    object-position: 75% 50%;
+}
+#nami::before {
+    content: "NAMI";
+}
+
+#vi {
+    object-position: 70% 50%;
+}
+#vi::before {
+    content: "VI";
+}
+
+#pyke {
+    object-position: 40%;
+}
+#pyke::before {
+    content: "PYKE";
+}
+
+#khazix {
+    object-position: 75%;
+}
+#khazix::before {
+    content: "KHA'ZIX";
+}
+
+#shen {
+    object-position: 65%;
+}
+#shen::before {
+    content: "SHEN";
+}
+
+#velkoz  {
+    object-position: 60%;
+}
+#velkoz::before {
+    content: "VEL'KOZ";
+}
+
+#sona {
+    object-position: 75%;
+}
+#sona::before {
+    content: "SONA";
+}
+
+#caitlyn {
+    object-position: 75%;
+}
+#caitlyn::before {
+    content: "CAITLYN";
+}
+
+#thresh {
+    object-position: 50%;
+}
+#thresh::before {
+    content: "THRESH";
+}
+
+#leona {
+    object-position: 80%;
+}
+#leona::before {
+    content: "LEONA";
+}
+
+#ashe {
+    object-position: 60%;
+}
+#ashe::before {
+    content: "ASHE";
+}
+
+#yasuo {
+    object-position: 80%;
+}
+#yasuo::before {
+    content: "YASUO";
+}
+
+#katarina {
+    object-position: 65%;
+}
+#katarina::before {
+    content: "KATARINA";
+}
+
+#jinx {
+    object-position: 70%;
+}
+#jinx::before {
+    content: "JINX";
+}
+
+#vayne {
+    object-position: 85%;
+}
+#vayne::before {
+    content: "VAYNE";
+}
+
+#zed {
+    object-position: 45%;
+}
+#zed::before {
+    content: "ZED";
+}
+
+#lulu {
+    object-position: 50%;
+}
+#lulu::before {
+    content: "LULU";
+}
+
+#jhin {
+    object-position: 60%;
+}
+#jhin::before {
+    content: "JHIN";
+}
+
+#yuumi {
+    object-position: 45%;
+}
+#yuumi::before {
+    content: "Yuumi";
+}
+
+#pantheon {
+    object-position: ;
+}
+#pantheon::before {
+    content: "PANTHEON";
+}
+
+#akali {
+    object-position: ;
+}
+#akali::before {
+    content: "AKALI";
+}
+
+#warwick {
+    object-position: 70%;
+}
+#warwick::before {
+    content: "WARWICK";
+}
+
+#brand {
+    object-position: 85%;
+}
+#brand::before {
+    content: "BRAND";
+}
