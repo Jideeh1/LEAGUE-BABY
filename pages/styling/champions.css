@@ -146,14 +146,14 @@
 }
 
 #pantheon {
-    object-position: ;
+    object-position: 50%;
 }
 #pantheon::before {
     content: "PANTHEON";
 }
 
 #akali {
-    object-position: ;
+    object-position: 50%;
 }
 #akali::before {
     content: "AKALI";

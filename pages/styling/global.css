@@ -129,7 +129,7 @@ nav {
 }
 
 .light-filter {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     z-index: -1;
@@ -447,6 +447,13 @@ main {
     column-gap: 3.5cqw;
     row-gap: 3cqw;
 
+    .hero {
+        position: fixed;
+
+        height: 80%;
+        width: 80%;
+    }
+
     .card {
         border: #8c909420 .2cqw solid;
         background-color: #13121450;
@@ -500,6 +507,10 @@ main {
 
             
         }
+    }
+
+    .card.hidden {
+        display: none;
     }
 
     

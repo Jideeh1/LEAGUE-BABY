@@ -130,4 +130,16 @@ tob.forEach(function(tob) {
   tob.src = "/assets/roles/top-hover.webp";
 });
 
+  const searchInput = document.getElementById('searchInput');
+  const cards = document.querySelectorAll('.card');
+
+  searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+
+    cards.forEach(card => {
+      const id = card.id.toLowerCase();
+      card.classList.toggle('hidden', !id.includes(query));
+    });
+  });
+
 });
