@@ -23,7 +23,7 @@
     </div>
 
     <nav class="champion-filter">
-      <button class="filter-btn">A-Z</button>
+      <button class="filter-btn role-icon" data-role="all">ALL</button>
 
       <button class="filter-btn">
         <img
@@ -32,6 +32,7 @@
           id="top"
           src="../assets/roles/top.png"
           alt="top"
+          data-role="top"
         />
       </button>
       <button class="filter-btn">
@@ -41,6 +42,7 @@
           id="jungle"
           src="../assets/roles/jungle.png"
           alt="jungle"
+          data-role="jungle"
         />
       </button>
       <button class="filter-btn">
@@ -50,6 +52,7 @@
           id="mid"
           src="../assets/roles/mid.png"
           alt="mid"
+          data-role="mid"
         />
       </button>
       <button class="filter-btn">
@@ -59,6 +62,7 @@
           id="support"
           src="../assets/roles/support.png"
           alt="support"
+          data-role="support"
         />
       </button>
       <button class="filter-btn">
@@ -68,6 +72,7 @@
           id="bot"
           src="../assets/roles/bottom.png"
           alt="bottom"
+          data-role="bot"
         />
       </button>
 
@@ -83,13 +88,14 @@
     <main>
       <div class="hero"></div>
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="soraka"
       >
         <div class="card-content">
@@ -106,13 +112,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="m |support"
+        data-role="mid"
         id="xerath"
       >
         <div class="card-content">
@@ -129,13 +136,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="nami"
       >
         <div class="card-content">
@@ -152,13 +160,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="jungle"
+        data-role="jungle"
         id="vi"
       >
         <div class="card-content">
@@ -175,13 +184,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="pyke"
       >
         <div class="card-content">
@@ -198,13 +208,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="jungle"
+        data-role="jungle"
         id="khazix"
       >
         <div class="card-content">
@@ -221,13 +232,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="top|support"
+        data-role="top"
         id="shen"
       >
         <div class="card-content">
@@ -244,13 +256,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="velkoz"
       >
         <div class="card-content">
@@ -267,13 +280,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="sona"
       >
         <div class="card-content">
@@ -290,13 +304,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="bot"
+        data-role="bot"
         id="caitlyn"
       >
         <div class="card-content">
@@ -313,13 +328,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="thresh"
       >
         <div class="card-content">
@@ -336,13 +352,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="leona"
       >
         <div class="card-content">
@@ -359,13 +376,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support|bot"
+        data-role="support"
         id="ashe"
       >
         <div class="card-content">
@@ -382,13 +400,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="top|mid"
+        data-role="top"
         id="yasuo"
       >
         <div class="card-content">
@@ -405,13 +424,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="mid"
+        data-role="mid"
         id="katarina"
       >
         <div class="card-content">
@@ -428,13 +448,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="bot"
+        data-role="bot"
         id="jinx"
       >
         <div class="card-content">
@@ -451,13 +472,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="bot"
+        data-role="bot"
         id="vayne"
       >
         <div class="card-content">
@@ -474,13 +496,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="mid|jungle"
+        data-role="mid"
         id="zed"
       >
         <div class="card-content">
@@ -497,13 +520,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="lulu"
       >
         <div class="card-content">
@@ -520,13 +544,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="bot"
+        data-role="bot"
         id="jhin"
       >
         <div class="card-content">
@@ -543,13 +568,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support"
+        data-role="support"
         id="yuumi"
       >
         <div class="card-content">
@@ -566,13 +592,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="top"
+        data-role="top"
         id="pantheon"
       >
         <div class="card-content">
@@ -589,13 +616,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="mid"
+        data-role="mid"
         id="akali"
       >
         <div class="card-content">
@@ -612,13 +640,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="jungle"
+        data-role="jungle"
         id="warwick"
       >
         <div class="card-content">
@@ -635,13 +664,14 @@
       </div>
 
       <div
+        onclick="expandChampion(this)"
         class="card"
         data-tilt
         data-tilt-glare
         data-tilt-max-glare="0.3"
         data-tilt-reverse="true"
         -reverse="true"
-        data-set="support|mid"
+        data-role="support"
         id="brand"
       >
         <div class="card-content">

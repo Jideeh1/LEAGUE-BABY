@@ -443,9 +443,9 @@ main {
     flex-wrap: wrap;
     display: flex;
     
-    padding: 10cqh 0cqw;
-    column-gap: 3.5cqw;
-    row-gap: 3cqw;
+    padding: 10cqh 2cqw;
+    column-gap: 5cqw;
+    row-gap: 4cqw;
 
     .hero {
         position: fixed;
@@ -455,6 +455,7 @@ main {
     }
 
     .card {
+        transition: width 1000ms ease-in-out;
         border: #8c909420 .2cqw solid;
         background-color: #13121450;
         transition: all .1s linear;
@@ -463,25 +464,26 @@ main {
         z-index: 2;
         
         position: relative;
-        width: max-content;
+        width: 10cqw;
         cursor: pointer;
 
         .card-content {
-            transition: width 700ms ease;
+            transition: width 1000ms ease-in-out;
             position: relative;
+            width: 100%;
 
-            border-radius: 5cqw;
+            border-radius: inherit;
             height: 100%;
-            width: 100%;        
 
             .champion {
                 transition: filter 500ms ease-in-out;
+                transition: width 1000ms ease-in-out;
                 border-radius: inherit;
                 object-fit: cover;
                 
                 opacity: .6;
                 height: 100%;
-                width: 10cqw;
+                width: 100%;
             }
             
             .cover {
@@ -507,8 +509,9 @@ main {
 
             
         }
-    }
 
+    }
+    
     .card.hidden {
         display: none;
     }
@@ -521,8 +524,9 @@ main {
         text-align: center;
         position: absolute;
 
-        transition: opacity 500ms;
         transform: translate(-50%, -50%);
+        transition: opacity 500ms;
+        filter: drop-shadow(.5cqw .5cqh 3px black);
         font-size: 1.5cqw;
         z-index: 3; 
         opacity: 0;

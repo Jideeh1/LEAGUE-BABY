@@ -143,3 +143,37 @@ tob.forEach(function(tob) {
   });
 
 });
+
+function expandChampion(champCard) {
+
+  if (champCard.style.width === "10cqw") {
+    champCard.style.width = "30cqw";
+    champCard.style.borderRadius = "1cqw";
+  } else {
+      champCard.style.width = "10cqw";
+      champCard.style.borderRadius = "5cqw";
+  }
+
+  console.log("Test button")
+}
+
+const buttons = document.querySelectorAll('.role-icon');
+const cards = document.querySelectorAll('.card');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const selectedRole = button.getAttribute('data-role');
+
+    cards.forEach(card => {
+      const cardRole = card.getAttribute('data-role');
+
+      if (selectedRole === 'all' || cardRole === selectedRole) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+
