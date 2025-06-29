@@ -37,6 +37,6 @@ live view of this project is under this link: https://league-baby.vercel.app/
 
 ## License
 
-The source code for this fan porject is licensed under the MIT License. click the <a href="License.txt">LICENSE</a>file for more details.
+The source code for this fan porject is licensed under the MIT License. click the <a href="License.txt">LICENSE</a> file for more details.
 
 League of Legends and related assets are © Riot Games. These assets are used for fan purposes only and are not licensed under the MIT License. This website is a fan project and is not affiliated with or endorsed by Riot Games. All trademarks and copyrights are property of their respective owners.
